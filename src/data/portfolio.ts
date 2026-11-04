@@ -51,7 +51,7 @@ export const PORTFOLIO_DATA = {
     email: "rahmatputrankri@gmail.com",
     location: "Padang Pariaman, Sumatera Barat, Indonesia (Open to Remote & Onsite)",
     socials: {
-      github: "https://github.com/putrapuices",
+      github: "https://github.com/rahmatputrabulcin",
       linkedin: "https://www.linkedin.com/in/rahmatputraid/",
       whatsapp: "https://wa.me/6282288126500?text=Halo%20Pak%20Rahmat%20Putra,%20saya%20tertarik%20dengan%20profil%20dan%20portofolio%20Anda.",
       certificatesDrive:
