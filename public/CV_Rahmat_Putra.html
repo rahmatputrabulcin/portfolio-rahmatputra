@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahmat Putra Bulcin - CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background: #fff;
+        }
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+        .title {
+            font-size: 1.2em;
+            color: #6366f1;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #1e293b;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .experience-item, .education-item, .cert-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #6366f1;
+        }
+        .job-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #1e293b;
+        }
+        .company {
+            color: #6366f1;
+            font-weight: 600;
+        }
+        .duration {
+            color: #64748b;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+        .description {
+            margin-top: 8px;
+            color: #475569;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .skill-category {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .skill-category h4 {
+            margin: 0 0 10px 0;
+            color: #6366f1;
+            font-size: 1em;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skill-list li {
+            padding: 3px 0;
+            color: #475569;
+        }
+        .summary {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid #6366f1;
+        }
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .achievement {
+            text-align: center;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .achievement-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #6366f1;
+            display: block;
+        }
+        .achievement-label {
+            font-size: 0.8em;
+            color: #64748b;
+        }
+        @media print {
+            body { margin: 0; padding: 10px; }
+            .cv-container { box-shadow: none; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">RAHMAT PUTRA BULCIN</div>
+            <div class="title">Senior Full-Stack Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">📧 rahmatputrabulcin@gmail.com</div>
+                <div class="contact-item">📱 +62 812-3456-7890</div>
+                <div class="contact-item">🌐 linkedin.com/in/rahmatputrabulcin</div>
+                <div class="contact-item">💻 github.com/rahmatputrabulcin</div>
+                <div class="contact-item">📍 Jakarta, Indonesia</div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">PROFESSIONAL SUMMARY</div>
+            <div class="summary">
+                Experienced Senior Full-Stack Developer with <strong>6+ years</strong> of expertise in modern web and mobile application development. Specialized in <strong>Laravel, React, and Flutter</strong> with a proven track record of delivering scalable, high-performance solutions. Passionate about integrating AI technologies and creating innovative digital experiences that drive business growth.
+            </div>
+            
+            <div class="achievements">
+                <div class="achievement">
+                    <span class="achievement-number">25+</span>
+                    <span class="achievement-label">Projects Completed</span>
+                </div>
+                <div class="achievement">
+                    <span class="achievement-number">6+</span>
+                    <span class="achievement-label">Years Experience</span>
+                </div>
+                <div class="achievement">
+                    <span class="achievement-number">15+</span>
+                    <span class="achievement-label">Technologies</span>
+                </div>
+                <div class="achievement">
+                    <span class="achievement-number">98%</span>
+                    <span class="achievement-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">TECHNICAL EXPERTISE</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>💻 Backend Development</h4>
+                    <ul class="skill-list">
+                        <li>Laravel 11 (Expert)</li>
+                        <li>CodeIgniter 4</li>
+                        <li>Yii2 Framework</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>⚛️ Frontend Development</h4>
+                    <ul class="skill-list">
+                        <li>React 18+ (Expert)</li>
+                        <li>HTML5/CSS3</li>
+                        <li>Bootstrap & Tailwind</li>
+                        <li>JavaScript ES6+</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>📱 Mobile Development</h4>
+                    <ul class="skill-list">
+                        <li>Flutter 3.x (Expert)</li>
+                        <li>Dart Programming</li>
+                        <li>Firebase Integration</li>
+                        <li>Cross-platform Apps</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>🗄️ Database & Cloud</h4>
+                    <ul class="skill-list">
+                        <li>PostgreSQL</li>
+                        <li>MySQL/MariaDB</li>
+                        <li>AWS Services</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="section">
+            <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+            
+            <div class="experience-item">
+                <div class="job-title">Senior Full-Stack Developer</div>
+                <div class="company">PT. TechSolution Indonesia</div>
+                <div class="duration">January 2022 - Present</div>
+                <div class="description">
+                    • Leading development of enterprise-level web applications serving 10,000+ users<br>
+                    • Architected and implemented microservices using Laravel and Docker<br>
+                    • Integrated ChatGPT APIs for AI-powered features, improving user engagement by 40%<br>
+                    • Mentored team of 5+ junior developers and established coding standards<br>
+                    • Optimized application performance, reducing load times by 60%
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Mid-Level Full-Stack Developer</div>
+                <div class="company">PT. AppDevMar</div>
+                <div class="duration">March 2021 - December 2021</div>
+                <div class="description">
+                    • Developed comprehensive B2B e-commerce platform using Laravel and React<br>
+                    • Implemented secure payment gateway integrations (Midtrans, Xendit)<br>
+                    • Built responsive Flutter mobile app with 50,000+ downloads<br>
+                    • Collaborated with cross-functional teams using Agile methodology<br>
+                    • Achieved 99.9% uptime through robust error handling and monitoring
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Junior Web Developer</div>
+                <div class="company">PT. Webindo Digital</div>
+                <div class="duration">January 2019 - February 2020</div>
+                <div class="description">
+                    • Built internal company applications using CodeIgniter framework<br>
+                    • Maintained and optimized legacy database systems<br>
+                    • Developed employee management CRUD systems<br>
+                    • Collaborated with senior developers on best practices<br>
+                    • Participated in code reviews and quality assurance processes
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Web Development Intern</div>
+                <div class="company">PT. Digital Nusantara</div>
+                <div class="duration">June 2018 - December 2018</div>
+                <div class="description">
+                    • Gained foundational experience in web development<br>
+                    • Performed comprehensive QA testing and system documentation<br>
+                    • Learned PHP, MySQL, and web development fundamentals<br>
+                    • Supported senior developers in various projects
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div class="section">
+            <div class="section-title">EDUCATION & CERTIFICATIONS</div>
+            
+            <div class="education-item">
+                <div class="job-title">Bachelor of Computer Science</div>
+                <div class="company">Universitas Indonesia</div>
+                <div class="duration">2015 - 2019</div>
+                <div class="description">
+                    Graduated with focus on Software Engineering and Database Systems
+                </div>
+            </div>
+
+            <div class="cert-item">
+                <div class="job-title">Professional Certifications</div>
+                <div class="description">
+                    • <strong>AWS Certified Developer</strong> - Amazon Web Services (2023)<br>
+                    • <strong>React Professional Certification</strong> - Meta (2024)<br>
+                    • <strong>Laravel Certified Developer</strong> - Laravel (2022)<br>
+                    • <strong>Flutter Development</strong> - Google (2023)
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Projects -->
+        <div class="section">
+            <div class="section-title">KEY PROJECTS</div>
+            
+            <div class="experience-item">
+                <div class="job-title">Enterprise E-Commerce Platform</div>
+                <div class="company">Flutter + Laravel + PostgreSQL</div>
+                <div class="description">
+                    Full-stack e-commerce solution with mobile app, admin dashboard, and payment integration. Handles 1000+ daily transactions.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">AI-Powered CRM System</div>
+                <div class="company">React + Laravel + ChatGPT API</div>
+                <div class="description">
+                    Customer relationship management system with AI-powered insights and automated responses. Improved customer satisfaction by 45%.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Multi-tenant SaaS Platform</div>
+                <div class="company">Laravel + React + Docker</div>
+                <div class="description">
+                    Scalable SaaS platform serving multiple clients with customizable features and real-time analytics dashboard.
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <div class="section-title">LANGUAGES</div>
+            <div class="description">
+                • <strong>Indonesian:</strong> Native<br>
+                • <strong>English:</strong> Professional Working Proficiency
+            </div>
+        </div>
+
+        <!-- Print Instructions -->
+        <div class="section" style="background: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 30px;">
+            <div style="text-align: center; color: #6366f1; font-size: 0.9em;">
+                <strong>📄 To save as PDF:</strong> Press Ctrl+P (Windows) or Cmd+P (Mac), then choose "Save as PDF"
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-print dialog when accessed with print parameter
+        if (window.location.search.includes('print=true')) {
+            window.print();
+        }
+    </script>
+</body>
+</html>
