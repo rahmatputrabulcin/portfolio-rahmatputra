@@ -238,18 +238,22 @@ export const PORTFOLIO_DATA = {
       ],
       links: [
         { label: "⭐ Co-Brand Master Management", url: "https://live-master.ez-lend.loans/backend/" },
-        { label: "Choi Kee HK (Backend)", url: "https://api.choikeehk.org/backend/web/site/login" },
+        { label: "Choi Kee HK (Backend)", url: "https://api.choikeehk.org/backend/" },
+        { label: "Choi Kee HK (Login)", url: "https://api.choikeehk.org/backend/web/site/login" },
         { label: "Choi Kee HK (Landing)", url: "https://choikeehk.org/" },
-        { label: "Ezlend (Backend)", url: "https://api.ez-lend.loans/backend/" },
-        { label: "Ezlend (Landing)", url: "https://new.ez-lend.loans/" },
         { label: "Vertex Finance (Backend)", url: "https://api.vertexfinanceloan.com/backend/" },
         { label: "Vertex Finance (Landing)", url: "https://www.vertexfinanceloan.com/" },
-        { label: "Lala Lesnd (Backend)", url: "https://api.lalalend.org/backend/" },
+        { label: "EasyLoan AUD (Backend)", url: "https://api.easyloanaud.org/backend/" },
+        { label: "EasyLoan AUD (Landing)", url: "https://www.easyloanaud.org/" },
+        { label: "Lala Lend (Backend)", url: "https://api.lalalend.org/backend/" },
         { label: "Lala Lend (Landing)", url: "https://lalalend.org/" },
+        { label: "Ezlend (Backend)", url: "https://api.ez-lend.loans/backend/" },
+        { label: "Ezlend (Landing)", url: "https://new.ez-lend.loans/" },
       ],
       apkLinks: [
         { label: "APK Ezlend Live", url: "https://api.ez-lend.loans/site/download?file=ezlend-live.apk" },
         { label: "APK Choi Kee HK", url: "https://api.choikeehk.org/site/download?file=choikee-live.apk" },
+        { label: "APK EasyLoan AUD", url: "https://api.easyloanaud.org/site/download?file=easyloan-live.apk" },
         { label: "APK Vertex Loan", url: "https://api.vertexfinanceloan.com/site/download?file=myloan-live.apk" },
         { label: "APK Lala Lend", url: "https://api.lalalend.org/site/download?file=lalalend-prod.apk" },
       ],
@@ -326,6 +330,23 @@ export const PORTFOLIO_DATA = {
       links: [
         { label: "Portal e-PAMPAM", url: "https://bap.agamkab.go.id" },
         { label: "SIPINTAR PPDB", url: "https://sipintar.pariamankota.go.id" },
+      ],
+    },
+    {
+      title: "Smart Laundry Management & POS System",
+      category: "SaaS",
+      role: "Creator & Full-Stack Developer",
+      description:
+        "Sistem informasi manajemen operasional usaha laundry terpadu berbasis web yang mencakup penerimaan order pakaian (kiloan & satuan), pelacakan status cuci real-time, pencatatan transaksi kasir POS, perhitungan komisi karyawan, serta laporan keuangan omset bisnis.",
+      highlights: [
+        "Aplikasi kasir POS laundry cepat dengan cetak nota transaksi dan struk digital.",
+        "Pelacakan alur pengerjaan pakaian bertahap (Antrean, Dicuci, Pengeringan, Disetrika, Siap Diambil).",
+        "Modul laporan keuangan akuntansi, omset harian/bulanan, dan monitoring performa outlet.",
+        "Dideploy di domain resmi mandiri berstandar keamanan SSL di laundry.rahmatputra.my.id.",
+      ],
+      techStack: ["PHP (OOP)", "MySQL / MariaDB", "RESTful API", "JavaScript", "POS System", "Tailwind CSS"],
+      links: [
+        { label: "Buka Sistem Laundry", url: "https://laundry.rahmatputra.my.id/" },
       ],
     },
     {
