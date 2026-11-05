@@ -1,3 +1,5 @@
+"use client";
+
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 
 export default function Footer() {

@@ -1,3 +1,5 @@
+"use client";
+
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 import { Server, Layout, Database, CreditCard, Check, Code } from "lucide-react";
 

@@ -1,3 +1,5 @@
+"use client";
+
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 import { Briefcase, Calendar, MapPin, CheckCircle } from "lucide-react";
 

@@ -1,3 +1,5 @@
+"use client";
+
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 import { GraduationCap, Award, ExternalLink, BookOpen } from "lucide-react";
 
