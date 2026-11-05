@@ -216,24 +216,44 @@ export const PORTFOLIO_DATA = {
 
   projects: [
     {
-      title: "Ezlend Multi-Country FinTech & Loan Platform",
+      title: "Ezlend Multi-Country FinTech & Multi-Tenant Loan Ecosystem",
       category: "FinTech",
       role: "Lead Backend Developer & Flutter Mobile Developer",
       description:
-        "Platform teknologi finansial pinjaman online dengan multi-tenant backend di berbagai kawasan (Hong Kong, Australia, dll.), terintegrasi dengan scoring kredit, verifikasi dokumen, dan aplikasi mobile Android.",
+        "Ekosistem platform teknologi finansial pinjaman online multi-negara (Hong Kong, Australia, dll.) dengan sistem Co-Brand Master Management terpusat yang mengelola seluruh tenant backend, scoring kredit otomatis, audit verifikasi, dan aplikasi mobile Android.",
       highlights: [
-        "REST API performa tinggi untuk transaksi pinjaman finansial aman.",
-        "Membangun aplikasi Android mandiri menggunakan Flutter untuk ribuan pengguna aktif.",
-        "Manajemen multi-instansi backend (Vertex Finance, EasyLoan AUD, Chikee HK, Lalalend).",
+        "Sistem Co-Brand (Live Master) sebagai master kontrol dan manajemen terpusat seluruh link tenant pinjaman.",
+        "REST API performa tinggi untuk transaksi perbankan dan pinjaman finansial aman berstandar enkripsi.",
+        "Membangun aplikasi Android mandiri menggunakan Flutter untuk ribuan pengguna aktif di berbagai negara.",
+        "Multi-instansi backend aktif: Co-Brand Master, Choi Kee HK, Vertex Finance, EasyLoan AUD, Lala Lend, dan Ezlend.",
       ],
-      techStack: ["PHP Yii2", "RESTful API", "Flutter", "Android APK", "MySQL", "JWT Security"],
+      techStack: [
+        "PHP Yii2",
+        "RESTful API",
+        "Flutter (Android)",
+        "Multi-Tenant Architecture",
+        "MySQL",
+        "JWT Security",
+        "Co-Brand Master Engine",
+      ],
       links: [
-        { label: "Backend System", url: "https://api.ez-lend.loans/backend/web/site/login" },
-        { label: "Landing Portal", url: "https://new.ez-lend.loans/" },
+        { label: "⭐ Co-Brand Master Management", url: "https://live-master.ez-lend.loans/backend/" },
+        { label: "Choi Kee HK (Backend)", url: "https://api.choikeehk.org/backend/web/site/login" },
+        { label: "Choi Kee HK (Landing)", url: "https://choikeehk.org/" },
+        { label: "Ezlend (Backend)", url: "https://api.ez-lend.loans/backend/" },
+        { label: "Ezlend (Landing)", url: "https://new.ez-lend.loans/" },
+        { label: "Vertex Finance (Backend)", url: "https://api.vertexfinanceloan.com/backend/" },
+        { label: "Vertex Finance (Landing)", url: "https://www.vertexfinanceloan.com/" },
+        { label: "EasyLoan AUD (Backend)", url: "https://api.easyloanaud.org/backend/" },
+        { label: "Lala Lend (Backend)", url: "https://api.lalalend.org/backend/" },
+        { label: "Lala Lend (Landing)", url: "https://lalalend.org/" },
       ],
       apkLinks: [
         { label: "APK Ezlend Live", url: "https://api.ez-lend.loans/site/download?file=ezlend-live.apk" },
+        { label: "APK Choi Kee HK", url: "https://api.choikeehk.org/site/download?file=choikee-live.apk" },
         { label: "APK EasyLoan AUD", url: "https://api.easyloanaud.org/site/download?file=easyloan-live.apk" },
+        { label: "APK Vertex Loan", url: "https://api.vertexfinanceloan.com/site/download?file=myloan-live.apk" },
+        { label: "APK Lala Lend", url: "https://api.lalalend.org/site/download?file=lalalend-prod.apk" },
       ],
     },
     {
