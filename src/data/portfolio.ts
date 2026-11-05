@@ -125,6 +125,28 @@ export const PORTFOLIO_DATA = {
 
   experiences: [
     {
+      company: "PT. Indah Logistik (Indah Group)",
+      role: "Backend Developer",
+      period: "3 Feb 2025 – 31 Okt 2026",
+      location: "Indonesia",
+      type: "Full-Time",
+      description:
+        "Merancang, memelihara, dan mengembangkan arsitektur backend skala nasional untuk ekosistem kargo, sistem tracking resi, serta portal digital Indah Group menggunakan framework PHP Yii2.",
+      achievements: [
+        "Mengembangkan dan memelihara backend portal resmi Indah Logistik (https://indahlogistik.co.id/) berbasis framework Yii2.",
+        "Membangun dan mengoptimasi backend layanan pemesanan kargo online Indah Online (https://indahonline.com/).",
+        "Mengembangkan arsitektur backend portal ekspedisi Indah Express (https://indahexpres.com/ dan https://indahexpres.co.id/).",
+        "Mengoptimasi RESTful API untuk fitur cek tarif ongkir (rate checking) dan pelacakan resi (AWB tracking) real-time dengan volume transaksi harian tinggi.",
+      ],
+      techStack: [
+        "PHP (Yii2 Framework)",
+        "RESTful API",
+        "MySQL / MariaDB",
+        "Logistics & AWB Tracking",
+        "High-Traffic Optimization",
+      ],
+    },
+    {
       company: "Cooper Group Technology",
       role: "Senior Backend Developer",
       period: "Jul 2023 – Mar 2026",
@@ -215,6 +237,31 @@ export const PORTFOLIO_DATA = {
   ] as Experience[],
 
   projects: [
+    {
+      title: "Indah Logistik & Cargo Enterprise Ecosystem",
+      category: "Enterprise",
+      role: "Backend Developer",
+      description:
+        "Ekosistem digital logistik dan ekspedisi kargo nasional Indah Group menggunakan framework PHP Yii2. Mencakup integrasi core backend untuk pemesanan kargo online, kalkulasi ongkos kirim real-time, dan pelacakan resi AWB skala nasional.",
+      highlights: [
+        "Pengembangan backend portal utama Indah Logistik (indahlogistik.co.id) menggunakan framework Yii2.",
+        "Sistem pemesanan kargo online Indah Online (indahonline.com) dan portal ekspedisi Indah Express.",
+        "Optimasi database query dan throughput REST API untuk ribuan request pelacakan resi per menit.",
+      ],
+      techStack: [
+        "PHP (Yii2 Framework)",
+        "RESTful API",
+        "MySQL / MariaDB",
+        "Logistics Architecture",
+        "High Concurrency",
+      ],
+      links: [
+        { label: "Indah Logistik Resmi", url: "https://indahlogistik.co.id/" },
+        { label: "Indah Online Booking", url: "https://indahonline.com/" },
+        { label: "Indah Express (COM)", url: "https://indahexpres.com/" },
+        { label: "Indah Express (CO.ID)", url: "https://indahexpres.co.id/" },
+      ],
+    },
     {
       title: "Ezlend Multi-Country FinTech & Multi-Tenant Loan Ecosystem",
       category: "FinTech",
