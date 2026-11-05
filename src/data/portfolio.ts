@@ -1,3 +1,5 @@
+import { Github } from "lucide-react";
+
 export interface Project {
   title: string;
   category: "FinTech" | "GovTech" | "Healthcare" | "Enterprise" | "SaaS";
@@ -52,6 +54,7 @@ export const PORTFOLIO_DATA = {
     location: "Padang Pariaman, Sumatera Barat, Indonesia (Open to Remote & Onsite)",
     socials: {
       github: "https://github.com/rahmatputrabulcin",
+      github2:"https://github.com/putrapuices",
       linkedin: "https://www.linkedin.com/in/rahmatputraid/",
       whatsapp: "https://wa.me/6282288126500?text=Halo%20Pak%20Rahmat%20Putra,%20saya%20tertarik%20dengan%20profil%20dan%20portofolio%20Anda.",
       certificatesDrive:
