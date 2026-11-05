@@ -337,14 +337,22 @@ export const PORTFOLIO_DATA = {
       category: "SaaS",
       role: "Creator & Full-Stack Developer",
       description:
-        "Sistem informasi manajemen operasional usaha laundry terpadu berbasis web yang mencakup penerimaan order pakaian (kiloan & satuan), pelacakan status cuci real-time, pencatatan transaksi kasir POS, perhitungan komisi karyawan, serta laporan keuangan omset bisnis.",
+        "Sistem informasi manajemen operasional usaha laundry terpadu berbasis web menggunakan arsitektur framework Laravel terbaru (Laravel 11 / PHP 8.2+). Mencakup penerimaan order pakaian (kiloan & satuan), pelacakan alur pengerjaan cuci real-time, pencatatan transaksi kasir POS, perhitungan komisi karyawan, serta laporan keuangan omset bisnis.",
       highlights: [
+        "Dibangun dengan framework Laravel terbaru (Clean Architecture, Eloquent ORM, & Blade/REST API).",
         "Aplikasi kasir POS laundry cepat dengan cetak nota transaksi dan struk digital.",
         "Pelacakan alur pengerjaan pakaian bertahap (Antrean, Dicuci, Pengeringan, Disetrika, Siap Diambil).",
-        "Modul laporan keuangan akuntansi, omset harian/bulanan, dan monitoring performa outlet.",
+        "Modul laporan akuntansi, pembukuan omset harian/bulanan, dan monitoring performa outlet.",
         "Dideploy di domain resmi mandiri berstandar keamanan SSL di laundry.rahmatputra.my.id.",
       ],
-      techStack: ["PHP (OOP)", "MySQL / MariaDB", "RESTful API", "JavaScript", "POS System", "Tailwind CSS"],
+      techStack: [
+        "Laravel (Latest / Laravel 11)",
+        "PHP 8.2+",
+        "MySQL / MariaDB",
+        "RESTful API",
+        "Tailwind CSS",
+        "POS Laundry Engine",
+      ],
       links: [
         { label: "Buka Sistem Laundry", url: "https://laundry.rahmatputra.my.id/" },
       ],
