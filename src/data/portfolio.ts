@@ -228,7 +228,7 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["PHP Yii2", "RESTful API", "Flutter", "Android APK", "MySQL", "JWT Security"],
       links: [
-        { label: "Backend System", url: "https://new.ez-lend.loans/backend/web" },
+        { label: "Backend System", url: "https://api.ez-lend.loans/backend/web/site/login" },
         { label: "Landing Portal", url: "https://new.ez-lend.loans/" },
       ],
       apkLinks: [
