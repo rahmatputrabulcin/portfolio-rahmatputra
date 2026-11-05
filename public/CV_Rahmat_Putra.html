@@ -1,364 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahmat Putra Bulcin - CV</title>
+    <title>Curriculum Vitae - Rahmat Putra, S.Kom</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 20px;
-            color: #333;
-            background: #fff;
+            padding: 0;
         }
-        .cv-container {
-            max-width: 800px;
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            line-height: 1.5;
+            color: #1e293b;
+            background: #f1f5f9;
+            padding: 30px 15px;
+        }
+        .cv-wrapper {
+            max-width: 850px;
             margin: 0 auto;
-            background: white;
-            padding: 30px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
         .header {
-            text-align: center;
-            border-bottom: 3px solid #6366f1;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .name {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #1e293b;
-            margin-bottom: 5px;
-        }
-        .title {
-            font-size: 1.2em;
-            color: #6366f1;
-            margin-bottom: 15px;
-        }
-        .contact-info {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            font-size: 0.9em;
-        }
-        .contact-item {
-            display: flex;
+            gap: 24px;
             align-items: center;
-            gap: 5px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
         }
-        .section {
-            margin-bottom: 25px;
+        .photo {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #e2e8f0;
+            flex-shrink: 0;
         }
-        .section-title {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #1e293b;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+        .header-info h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.5px;
         }
-        .experience-item, .education-item, .cert-item {
-            margin-bottom: 20px;
-            padding-left: 15px;
-            border-left: 3px solid #6366f1;
+        .header-info .job-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2563eb;
+            margin-top: 4px;
         }
-        .job-title {
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #1e293b;
-        }
-        .company {
-            color: #6366f1;
-            font-weight: 600;
-        }
-        .duration {
-            color: #64748b;
-            font-size: 0.9em;
-            margin: 5px 0;
-        }
-        .description {
-            margin-top: 8px;
-            color: #475569;
-        }
-        .skills-grid {
+        .contact-grid {
+            margin-top: 10px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .skill-category {
-            background: #f8fafc;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-        }
-        .skill-category h4 {
-            margin: 0 0 10px 0;
-            color: #6366f1;
-            font-size: 1em;
-        }
-        .skill-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .skill-list li {
-            padding: 3px 0;
+            gap: 6px 16px;
+            font-size: 13px;
             color: #475569;
         }
-        .summary {
+        .contact-grid a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .section {
+            margin-bottom: 22px;
+        }
+        .section-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: #0f172a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1.5px solid #cbd5e1;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .summary-text {
+            font-size: 13.5px;
+            color: #334155;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .experience-item {
+            margin-bottom: 16px;
+            padding-left: 12px;
+            border-left: 3px solid #3b82f6;
+        }
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .exp-role {
+            font-size: 15px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .exp-company {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #2563eb;
+        }
+        .exp-date {
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748b;
             background: #f1f5f9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            border-left: 4px solid #6366f1;
+            padding: 2px 8px;
+            border-radius: 4px;
         }
-        .achievements {
+        .exp-location {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 6px;
+        }
+        .exp-desc {
+            font-size: 13px;
+            color: #475569;
+            margin-bottom: 6px;
+        }
+        .exp-bullets {
+            list-style-type: square;
+            margin-left: 18px;
+            font-size: 12.5px;
+            color: #334155;
+        }
+        .exp-bullets li {
+            margin-bottom: 3px;
+        }
+        .exp-tech {
+            margin-top: 6px;
+            font-size: 11.5px;
+            color: #64748b;
+            font-weight: 500;
+        }
+        .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 15px;
-            margin: 15px 0;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
         }
-        .achievement {
-            text-align: center;
+        .skill-box {
             background: #f8fafc;
-            padding: 15px;
+            border: 1px solid #e2e8f0;
+            padding: 10px 14px;
             border-radius: 8px;
         }
-        .achievement-number {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #6366f1;
-            display: block;
+        .skill-box h4 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #2563eb;
+            margin-bottom: 4px;
         }
-        .achievement-label {
-            font-size: 0.8em;
+        .skill-box p {
+            font-size: 12.5px;
+            color: #334155;
+        }
+        .edu-item {
+            margin-bottom: 12px;
+        }
+        .edu-school {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .edu-degree {
+            font-size: 13px;
+            color: #2563eb;
+            font-weight: 600;
+        }
+        .edu-meta {
+            font-size: 12px;
             color: #64748b;
         }
+        .edu-thesis {
+            font-size: 12.5px;
+            color: #475569;
+            margin-top: 2px;
+        }
+        .print-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(37,99,235,0.35);
+        }
+        .print-btn:hover {
+            background: #1d4ed8;
+        }
         @media print {
-            body { margin: 0; padding: 10px; }
-            .cv-container { box-shadow: none; padding: 0; }
+            body { background: white; padding: 0; }
+            .cv-wrapper { box-shadow: none; padding: 0; max-width: 100%; border-radius: 0; }
+            .print-btn { display: none; }
         }
     </style>
 </head>
 <body>
-    <div class="cv-container">
+
+    <button class="print-btn" onclick="window.print()">🖨️ Cetak / Simpan PDF</button>
+
+    <div class="cv-wrapper">
         <!-- Header -->
         <div class="header">
-            <div class="name">RAHMAT PUTRA BULCIN</div>
-            <div class="title">Senior Full-Stack Developer</div>
-            <div class="contact-info">
-                <div class="contact-item">📧 rahmatputrabulcin@gmail.com</div>
-                <div class="contact-item">📱 +62 812-3456-7890</div>
-                <div class="contact-item">🌐 linkedin.com/in/rahmatputrabulcin</div>
-                <div class="contact-item">💻 github.com/rahmatputrabulcin</div>
-                <div class="contact-item">📍 Jakarta, Indonesia</div>
+            <img src="/profile.jpg" alt="Rahmat Putra, S.Kom" class="photo" onerror="this.style.display='none'">
+            <div class="header-info">
+                <h1>RAHMAT PUTRA, S.KOM</h1>
+                <div class="job-title">Senior Backend & Full-Stack Developer</div>
+                
+                <div class="contact-grid">
+                    <div>📱 082288126500</div>
+                    <div>📧 <a href="mailto:rahmatputrankri@gmail.com">rahmatputrankri@gmail.com</a></div>
+                    <div>🔗 <a href="https://www.linkedin.com/in/rahmatputraid/" target="_blank">linkedin.com/in/rahmatputraid</a></div>
+                    <div>💻 <a href="https://github.com/rahmatputrabulcin" target="_blank">github.com/rahmatputrabulcin</a></div>
+                    <div>🌐 <a href="https://rahmatputra.my.id" target="_blank">rahmatputra.my.id</a></div>
+                    <div>📍 Kab. Padang Pariaman, Sumatera Barat</div>
+                </div>
             </div>
         </div>
 
-        <!-- Professional Summary -->
+        <!-- Summary -->
         <div class="section">
-            <div class="section-title">PROFESSIONAL SUMMARY</div>
-            <div class="summary">
-                Experienced Senior Full-Stack Developer with <strong>6+ years</strong> of expertise in modern web and mobile application development. Specialized in <strong>Laravel, React, and Flutter</strong> with a proven track record of delivering scalable, high-performance solutions. Passionate about integrating AI technologies and creating innovative digital experiences that drive business growth.
+            <div class="section-title">Ringkasan Profesional</div>
+            <p class="summary-text">
+                Saya adalah Software Developer profesional dengan pengalaman lebih dari 8 tahun di industri teknologi informasi. Memiliki keahlian inti dalam arsitektur backend dan pengembangan aplikasi web yang kokoh menggunakan OOP PHP dengan framework Laravel, Yii2, dan CodeIgniter. Terampil dalam pengembangan antarmuka modern menggunakan JavaScript, React.js, jQuery, CSS, dan Bootstrap/Tailwind. Berpengalaman luas dalam perancangan serta optimasi basis data termasuk MySQL/MariaDB, MongoDB, dan PostgreSQL. Selain itu, saya mengembangkan aplikasi mobile Android menggunakan Flutter untuk menghadirkan solusi Full-Stack terintegrasi di platform web dan mobile.
+            </p>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <div class="section-title">Pengalaman Kerja</div>
+
+            <!-- Cooper Group Technology -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Backend Developer & Frontend Developer (Remote)</div>
+                        <div class="exp-company">COOPER GROUP TECHNOLOGY</div>
+                    </div>
+                    <div class="exp-date">Jul 2023 – Mar 2026</div>
+                </div>
+                <div class="exp-location">Ekocheras Office Tower, Jalan Cheras, Kuala Lumpur, Malaysia (Remote)</div>
+                <div class="exp-desc">Mengembangkan core backend, REST API, serta aplikasi mobile untuk solusi perbankan virtual, FinTech, e-wallet, dan cloud POS internasional:</div>
+                <ul class="exp-bullets">
+                    <li><strong>MIMONE:</strong> Merancang REST API dan backend resmi untuk aplikasi spa & wellness health management terintegrasi POS.</li>
+                    <li><strong>Ezlend FinTech Multi-Tenant:</strong> Membangun backend, engine pinjaman, dan aplikasi Android Flutter untuk ekosistem pinjaman online (Co-Brand Master, Choi Kee HK, Vertex Finance, EasyLoan AUD, Lala Lend).</li>
+                    <li><strong>RC365 Virtual Banking:</strong> Mengintegrasikan Global e-Payment (GEP) API untuk sistem perbankan virtual.</li>
+                    <li><strong>Paytend BaaS API:</strong> Mengintegrasikan Paytend BaaS untuk permohonan kartu, pembukaan rekening kartu, aktivasi, dan manajemen kartu.</li>
+                    <li><strong>WICA:</strong> Mengembangkan backend World Digital Identity and Currency Authority.</li>
+                    <li><strong>Mobile Point of Sale (mPOS):</strong> Mengembangkan REST API yang terintegrasi dengan payment gateway provider BlueOcean Pay.</li>
+                </ul>
+                <div class="exp-tech">Teknologi: PHP (Yii2 & Laravel), RESTful API, Flutter, MySQL, JWT, Paytend, GEP, BlueOcean Pay</div>
             </div>
-            
-            <div class="achievements">
-                <div class="achievement">
-                    <span class="achievement-number">25+</span>
-                    <span class="achievement-label">Projects Completed</span>
+
+            <!-- SETDA Agam -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Tenaga Ahli Programmer</div>
+                        <div class="exp-company">SETDA (Sekretariat Daerah) Kab. Agam</div>
+                    </div>
+                    <div class="exp-date">Feb 2023 – Jul 2023</div>
                 </div>
-                <div class="achievement">
-                    <span class="achievement-number">6+</span>
-                    <span class="achievement-label">Years Experience</span>
-                </div>
-                <div class="achievement">
-                    <span class="achievement-number">15+</span>
-                    <span class="achievement-label">Technologies</span>
-                </div>
-                <div class="achievement">
-                    <span class="achievement-number">98%</span>
-                    <span class="achievement-label">Client Satisfaction</span>
-                </div>
+                <div class="exp-location">Bagian Administrasi Pembangunan, Lubuk Basung, Kab. Agam, Sumatera Barat</div>
+                <ul class="exp-bullets">
+                    <li>Mengembangkan aplikasi <strong>e-PAMPAM</strong> (bap.agamkab.go.id) untuk tata kelola administrasi pembangunan daerah berbasis proses administrasi.</li>
+                    <li>Mengintegrasikan data tender pemenang pengadaan dari sistem LPSE nasional hingga pencairan anggaran kegiatan paket daerah.</li>
+                </ul>
+                <div class="exp-tech">Teknologi: PHP CodeIgniter, MySQL, JavaScript, Bootstrap, LPSE Integration</div>
             </div>
+
+            <!-- RSUD Pariaman -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Programmer Web Sistem Informasi Manajemen</div>
+                        <div class="exp-company">RSUD PROF. H. Muhammad Yamin, S.H</div>
+                    </div>
+                    <div class="exp-date">Mar 2022 – Des 2022</div>
+                </div>
+                <div class="exp-location">Kota Pariaman, Sumatera Barat</div>
+                <ul class="exp-bullets">
+                    <li>Mengembangkan Sistem Informasi Manajemen Rumah Sakit (SIMRS) BLUD terpadu mencakup 6 modul inti: Rawat Inap (Inpatient), Rawat Jalan (Outpatient), IGD (Emergency Room), Antrean Pasien, Modul Farmasi (e-Resep & Obat), dan Modul Gudang Logistik medis.</li>
+                </ul>
+                <div class="exp-tech">Teknologi: PHP (OOP), MySQL/MariaDB, JavaScript, Hospital Workflow Systems</div>
+            </div>
+
+            <!-- PT Cronos Studio Indonesia -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Programmer Web (Remote)</div>
+                        <div class="exp-company">PT. CRONOS STUDIO INDONESIA</div>
+                    </div>
+                    <div class="exp-date">Mei 2022 – Jan 2023</div>
+                </div>
+                <div class="exp-location">Jl. Margonda Raya, Depok, Indonesia (Remote)</div>
+                <ul class="exp-bullets">
+                    <li>Mengembangkan aplikasi <strong>BANTEX ERP</strong> menggunakan framework Yii2 untuk mendukung proses bisnis dari front-line penjualan hingga pembukuan akuntansi.</li>
+                    <li>Mengembangkan aplikasi <strong>Zipay</strong> (zipay.reksapay.com / admin.purwantara.com) penyedia uang elektronik berizin Bank Indonesia dengan framework Laravel.</li>
+                    <li>Membangun REST API berbasis JWT untuk aplikasi Payment of Sale (Kasir) yang menghubungkan frontend dan mobile.</li>
+                </ul>
+                <div class="exp-tech">Teknologi: Laravel, Yii2 Framework, REST API, JWT, MySQL, FinTech Compliance</div>
+            </div>
+
+            <!-- Diskominfo Kota Pariaman -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Database Administrator & Web Programmer</div>
+                        <div class="exp-company">Dinas Komunikasi dan Informatika (DISKOMINFO) Kota Pariaman</div>
+                    </div>
+                    <div class="exp-date">Jun 2019 – Mar 2022</div>
+                </div>
+                <div class="exp-location">Kota Pariaman, Sumatera Barat</div>
+                <ul class="exp-bullets">
+                    <li>Membangun <strong>SIPINTAR (PPDB Online)</strong> untuk penerimaan peserta didik baru Kota Pariaman secara transparan.</li>
+                    <li>Mengembangkan <strong>SILASIH</strong> (Sistem Pelanggan Air Bersih) untuk pembayaran tagihan PDAM secara online.</li>
+                    <li>Mengembangkan <strong>SIAJO</strong> (Sistem Informasi Jabatan Online) untuk evaluasi dan analisis jabatan ASN.</li>
+                    <li>Mengembangkan <strong>EBPKB</strong> (manajemen kendaraan dinas), <strong>SMILING/Elabor</strong> (sistem lab lingkungan), dan <strong>SIAMIN</strong> (monitoring pembangunan fisik kota).</li>
+                </ul>
+                <div class="exp-tech">Teknologi: Yii2 Framework, MySQL / MariaDB, Database Tuning, Linux, E-Government</div>
+            </div>
+        </div>
+
+        <!-- Proyek Mandiri -->
+        <div class="section">
+            <div class="section-title">Karya & Proyek Mandiri Unggulan</div>
+            <ul class="exp-bullets">
+                <li><strong>Smart Laundry Management & POS (https://laundry.rahmatputra.my.id/):</strong> Sistem manajemen laundry lengkap dengan kasir POS, tracking cuci, laporan omset, berbasis framework Laravel terbaru (Laravel 13 & PHP 8.5).</li>
+                <li><strong>Invite Ambo (https://invite.aplikasiambo.my.id):</strong> Platform undangan digital interaktif berbasis CodeIgniter 4 dengan integrasi payment gateway Midtrans dan WhatsApp Gateway otomatis.</li>
+                <li><strong>Aplikasi Ambo (https://aplikasiambo.my.id):</strong> Portal edukasi dan pembelajaran programming berbasis Laravel.</li>
+            </ul>
         </div>
 
         <!-- Technical Skills -->
         <div class="section">
-            <div class="section-title">TECHNICAL EXPERTISE</div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>💻 Backend Development</h4>
-                    <ul class="skill-list">
-                        <li>Laravel 11 (Expert)</li>
-                        <li>CodeIgniter 4</li>
-                        <li>Yii2 Framework</li>
-                        <li>RESTful APIs</li>
-                    </ul>
+            <div class="section-title">Keahlian Teknis</div>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <h4>Backend & Arsitektur</h4>
+                    <p>PHP (OOP), Laravel, Yii2, CodeIgniter, RESTful API, JSON Web Token (JWT), Microservices/Monolith</p>
                 </div>
-                <div class="skill-category">
-                    <h4>⚛️ Frontend Development</h4>
-                    <ul class="skill-list">
-                        <li>React 18+ (Expert)</li>
-                        <li>HTML5/CSS3</li>
-                        <li>Bootstrap & Tailwind</li>
-                        <li>JavaScript ES6+</li>
-                    </ul>
+                <div class="skill-box">
+                    <h4>Frontend & Mobile</h4>
+                    <p>JavaScript (ES6+), React.js, Next.js, Flutter (Android APK), HTML5/CSS3, Tailwind CSS, Bootstrap, jQuery</p>
                 </div>
-                <div class="skill-category">
-                    <h4>📱 Mobile Development</h4>
-                    <ul class="skill-list">
-                        <li>Flutter 3.x (Expert)</li>
-                        <li>Dart Programming</li>
-                        <li>Firebase Integration</li>
-                        <li>Cross-platform Apps</li>
-                    </ul>
+                <div class="skill-box">
+                    <h4>Basis Data</h4>
+                    <p>MySQL, MariaDB, PostgreSQL, MongoDB, Schema Architecture, Query Optimization & Indexing</p>
                 </div>
-                <div class="skill-category">
-                    <h4>🗄️ Database & Cloud</h4>
-                    <ul class="skill-list">
-                        <li>PostgreSQL</li>
-                        <li>MySQL/MariaDB</li>
-                        <li>AWS Services</li>
-                        <li>Docker</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Work Experience -->
-        <div class="section">
-            <div class="section-title">PROFESSIONAL EXPERIENCE</div>
-            
-            <div class="experience-item">
-                <div class="job-title">Senior Full-Stack Developer</div>
-                <div class="company">PT. TechSolution Indonesia</div>
-                <div class="duration">January 2022 - Present</div>
-                <div class="description">
-                    • Leading development of enterprise-level web applications serving 10,000+ users<br>
-                    • Architected and implemented microservices using Laravel and Docker<br>
-                    • Integrated ChatGPT APIs for AI-powered features, improving user engagement by 40%<br>
-                    • Mentored team of 5+ junior developers and established coding standards<br>
-                    • Optimized application performance, reducing load times by 60%
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-title">Mid-Level Full-Stack Developer</div>
-                <div class="company">PT. AppDevMar</div>
-                <div class="duration">March 2021 - December 2021</div>
-                <div class="description">
-                    • Developed comprehensive B2B e-commerce platform using Laravel and React<br>
-                    • Implemented secure payment gateway integrations (Midtrans, Xendit)<br>
-                    • Built responsive Flutter mobile app with 50,000+ downloads<br>
-                    • Collaborated with cross-functional teams using Agile methodology<br>
-                    • Achieved 99.9% uptime through robust error handling and monitoring
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-title">Junior Web Developer</div>
-                <div class="company">PT. Webindo Digital</div>
-                <div class="duration">January 2019 - February 2020</div>
-                <div class="description">
-                    • Built internal company applications using CodeIgniter framework<br>
-                    • Maintained and optimized legacy database systems<br>
-                    • Developed employee management CRUD systems<br>
-                    • Collaborated with senior developers on best practices<br>
-                    • Participated in code reviews and quality assurance processes
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-title">Web Development Intern</div>
-                <div class="company">PT. Digital Nusantara</div>
-                <div class="duration">June 2018 - December 2018</div>
-                <div class="description">
-                    • Gained foundational experience in web development<br>
-                    • Performed comprehensive QA testing and system documentation<br>
-                    • Learned PHP, MySQL, and web development fundamentals<br>
-                    • Supported senior developers in various projects
+                <div class="skill-box">
+                    <h4>Payment Gateway & Integrasi</h4>
+                    <p>Midtrans, Paytend BaaS, Global e-Payment (GEP), BlueOcean Pay, WhatsApp Gateway API, Postman, Git/GitHub</p>
                 </div>
             </div>
         </div>
 
         <!-- Education & Certifications -->
         <div class="section">
-            <div class="section-title">EDUCATION & CERTIFICATIONS</div>
-            
-            <div class="education-item">
-                <div class="job-title">Bachelor of Computer Science</div>
-                <div class="company">Universitas Indonesia</div>
-                <div class="duration">2015 - 2019</div>
-                <div class="description">
-                    Graduated with focus on Software Engineering and Database Systems
+            <div class="section-title">Pendidikan Formal & Pelatihan</div>
+            <div class="edu-item">
+                <div class="exp-header">
+                    <div class="edu-school">STMIK JAYANUSA Padang</div>
+                    <div class="edu-meta">2010 – 2014</div>
                 </div>
+                <div class="edu-degree">Sarjana Komputer (S.Kom) - Sistem Komputer | IPK 3.43 / 4.00</div>
+                <div class="edu-thesis">Skripsi: <em>"Digital Waterpass dengan Accelerometer"</em> (Sensor Accelerometer & Mikrokontroler).</div>
             </div>
-
-            <div class="cert-item">
-                <div class="job-title">Professional Certifications</div>
-                <div class="description">
-                    • <strong>AWS Certified Developer</strong> - Amazon Web Services (2023)<br>
-                    • <strong>React Professional Certification</strong> - Meta (2024)<br>
-                    • <strong>Laravel Certified Developer</strong> - Laravel (2022)<br>
-                    • <strong>Flutter Development</strong> - Google (2023)
+            <div class="edu-item">
+                <div class="exp-header">
+                    <div class="edu-school">SMAN 2 Pariaman</div>
+                    <div class="edu-meta">Jurusan IPA</div>
                 </div>
+                <div class="edu-thesis">Aktif di MPK (Majelis Permusyawarahan Kelas) & Peringkat 11 Kompetisi Matematika IPA CUP se-Sumatera Barat.</div>
             </div>
-        </div>
-
-        <!-- Key Projects -->
-        <div class="section">
-            <div class="section-title">KEY PROJECTS</div>
-            
-            <div class="experience-item">
-                <div class="job-title">Enterprise E-Commerce Platform</div>
-                <div class="company">Flutter + Laravel + PostgreSQL</div>
-                <div class="description">
-                    Full-stack e-commerce solution with mobile app, admin dashboard, and payment integration. Handles 1000+ daily transactions.
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-title">AI-Powered CRM System</div>
-                <div class="company">React + Laravel + ChatGPT API</div>
-                <div class="description">
-                    Customer relationship management system with AI-powered insights and automated responses. Improved customer satisfaction by 45%.
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-title">Multi-tenant SaaS Platform</div>
-                <div class="company">Laravel + React + Docker</div>
-                <div class="description">
-                    Scalable SaaS platform serving multiple clients with customizable features and real-time analytics dashboard.
-                </div>
-            </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="section">
-            <div class="section-title">LANGUAGES</div>
-            <div class="description">
-                • <strong>Indonesian:</strong> Native<br>
-                • <strong>English:</strong> Professional Working Proficiency
-            </div>
-        </div>
-
-        <!-- Print Instructions -->
-        <div class="section" style="background: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 30px;">
-            <div style="text-align: center; color: #6366f1; font-size: 0.9em;">
-                <strong>📄 To save as PDF:</strong> Press Ctrl+P (Windows) or Cmd+P (Mac), then choose "Save as PDF"
+            <div class="exp-tech" style="margin-top: 8px;">
+                <strong>Pelatihan & Bootcamp:</strong> Dicoding Indonesia, Alterra Academy, Digital Talent Scholarship (Kominfo x Progate), PKS Digital Academy, Santri Koding.<br>
+                <strong>Arsip Sertifikat Lengkap:</strong> <a href="https://drive.google.com/drive/folders/1Dq7MLY3wWehFbe-38SVVRuMe7MZ4TO0p" target="_blank" style="color: #2563eb;">Google Drive Sertifikat Resmi</a>
             </div>
         </div>
     </div>
 
-    <script>
-        // Auto-print dialog when accessed with print parameter
-        if (window.location.search.includes('print=true')) {
-            window.print();
-        }
-    </script>
 </body>
 </html>
