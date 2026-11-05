@@ -153,7 +153,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <p className="text-sm font-bold tracking-tight">Rahmat Putra, S.Kom</p>
-                  <p className="text-xs text-blue-200">Full-Stack & Backend Engineer</p>
+                  <p className="text-xs text-blue-200">Software Developer</p>
                 </div>
               </div>
 

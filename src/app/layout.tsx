@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rahmat Putra, S.Kom | Senior Backend & Full-Stack Developer",
+  title: "Rahmat Putra, S.Kom | Software Developer",
   description:
-    "Portofolio Profesional Rahmat Putra, S.Kom. Senior Backend & Full-Stack Developer dengan 8+ tahun pengalaman dalam arsitektur web PHP (Laravel, Yii2, CodeIgniter), React.js, Next.js, Flutter, FinTech, SIMRS, dan e-Government.",
+    "Portofolio Profesional Rahmat Putra, S.Kom. Software Developer dengan 8+ tahun pengalaman dalam arsitektur web PHP (Laravel, Yii2, CodeIgniter), React.js, Next.js, Flutter, FinTech, SIMRS, dan e-Government.",
   keywords: [
     "Rahmat Putra",
-    "Senior Backend Developer",
+    "Software Developer",
+    "Backend Developer",
     "Full-Stack Developer",
     "Laravel",
     "Yii2",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Rahmat Putra, S.Kom" }],
   openGraph: {
-    title: "Rahmat Putra, S.Kom | Senior Backend & Full-Stack Developer",
+    title: "Rahmat Putra, S.Kom | Software Developer",
     description:
       "8+ Tahun Pengalaman membangun Arsitektur Web Skala Besar, RESTful API, FinTech, SIMRS, dan E-Government.",
     type: "website",

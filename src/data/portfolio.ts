@@ -36,8 +36,8 @@ export interface SkillCategory {
 export const PORTFOLIO_DATA = {
   personal: {
     name: "Rahmat Putra, S.Kom",
-    badge: "Available for Senior / Lead / Full-Stack Opportunities",
-    title: "Senior Backend & Full-Stack Developer",
+    badge: "Available for Software Developer Opportunities",
+    title: "Software Developer",
     subtitle:
       "8+ Tahun Pengalaman membangun Arsitektur Web Skala Besar, RESTful API, FinTech, Sistem Informasi Manajemen Rumah Sakit (SIMRS), dan E-Government.",
     bio: [

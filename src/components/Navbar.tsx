@@ -48,7 +48,7 @@ export default function Navbar() {
                 Rahmat Putra <span className="text-xs font-semibold px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300">S.Kom</span>
               </span>
               <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                Senior Backend & Full-Stack
+                Software Developer
               </span>
             </div>
           </a>
