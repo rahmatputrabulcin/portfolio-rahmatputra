@@ -43,6 +43,16 @@ export default function Footer() {
           >
             GitHub
           </a>
+          {PORTFOLIO_DATA.personal.socials.github2 && (
+            <a
+              href={PORTFOLIO_DATA.personal.socials.github2}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 transition-colors"
+            >
+              GitHub (putrapuices)
+            </a>
+          )}
         </div>
       </div>
     </footer>

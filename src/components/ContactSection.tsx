@@ -134,10 +134,21 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-all hover:scale-110"
-                title="GitHub"
+                title="GitHub (rahmatputrabulcin)"
               >
                 <Github className="w-5 h-5" />
               </a>
+              {personal.socials.github2 && (
+                <a
+                  href={personal.socials.github2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-all hover:scale-110"
+                  title="GitHub (putrapuices)"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+              )}
               <a
                 href={personal.socials.certificatesDrive}
                 target="_blank"

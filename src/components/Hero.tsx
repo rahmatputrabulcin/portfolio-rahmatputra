@@ -110,10 +110,21 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:scale-105 transition-all"
-                title="GitHub"
+                title="GitHub (rahmatputrabulcin)"
               >
                 <Github className="w-4 h-4" />
               </a>
+              {personal.socials.github2 && (
+                <a
+                  href={personal.socials.github2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:scale-105 transition-all"
+                  title="GitHub (putrapuices)"
+                >
+                  <Github className="w-4 h-4" />
+                </a>
+              )}
               <a
                 href={`mailto:${personal.email}`}
                 className="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 hover:text-rose-600 dark:text-slate-300 dark:hover:text-rose-400 hover:scale-105 transition-all"
