@@ -1,4 +1,3 @@
-import { Github } from "lucide-react";
 
 export interface Project {
   title: string;
