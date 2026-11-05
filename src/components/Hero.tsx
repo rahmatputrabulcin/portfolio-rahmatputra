@@ -12,6 +12,7 @@ import {
   CheckCircle2,
   ExternalLink,
   Phone,
+  FolderCheck,
 } from "lucide-react";
 
 export default function Hero() {
@@ -124,11 +125,11 @@ export default function Hero() {
                 href={personal.socials.certificatesDrive}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 text-xs font-semibold hover:bg-blue-100 transition-all"
-                title="Google Drive Sertifikat"
+                className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-blue-50 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 text-xs font-semibold hover:bg-blue-100 dark:hover:bg-blue-900 border border-blue-200 dark:border-blue-800 transition-all shadow-sm hover:scale-105"
+                title="Google Drive Folder Sertifikat Resmi"
               >
-                <ExternalLink className="w-3.5 h-3.5" />
-                <span>Folder Sertifikat</span>
+                <FolderCheck className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+                <span>Google Drive Sertifikat</span>
               </a>
             </div>
           </div>
